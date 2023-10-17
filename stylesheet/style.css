@@ -6,10 +6,18 @@
 }
 
 
+
 /* Header rules */
 
 .header {
     background-image: url("../img/jumbo.png");
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #background-image {
@@ -31,12 +39,7 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    padding: 10px 20px;
-    margin: 0 20%;
-    
-    /* debug */
-    background-color: orange;
-
+    padding: 20px 20px;
 }
 
 .nav-logo {
@@ -51,11 +54,50 @@
     margin-right: 20px;
 }
 
-.nav-buttons {
-    display: flex;
-    flex-direction: column;
+
+header h1 {
+    font-size: 50px;
+    color: white;
+    padding: 40px 0;
 }
 
+header p {
+    color: white;
+    margin: 10px 300px;
+}
+
+/*Buttons*/
+button {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+  background-color: #36393f;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  border-radius: 30px;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.download-button {
+    background-color: white;
+    color: #36393f;
+    margin-right: 20px;
+}
+
+.login-button {
+    width: 50px;
+}
 
 
 /* First main block */
@@ -68,24 +110,11 @@
     background-color: blue;
 }
 
-.pink-block {
-    min-height: 300px;
-    width: calc(100% - 40%);
-
-    /* debug */
-    background-color: pink;
-    margin: 20px 0;
-
-}
-
 /* Repeated block */
 
 .container {
     display: flex;
     justify-content:center;
-    
-    /*debug*/
-    background-color: gray;
     min-height: 300px;
 }
 
@@ -100,17 +129,12 @@
 }
 
 .blue {
-    /*debug*/
-    background-color: lightblue;
     flex-basis: 50%;
 }
 
 .red {
     display: flex;
     flex-direction: column;
-    
-    /*debug*/
-    background-color: red;
 }
 
 .section-title {
@@ -120,7 +144,7 @@
 
 .second {
     /*debug*/
-    background-color: beige;
+    background-color: lightblue;
 }
 
 .green {
@@ -132,10 +156,6 @@
     justify-content: center;
     text-align: center;
 
-
-    /*debug*/
-    background-color: green;
-
 }
 
 .download-section{
@@ -143,15 +163,6 @@
     flex-direction: column;
 }
 
-.fourth {
-    /*debug*/
-    background-color: lightgray;
-}
-
-.fifth {
-    /*debug*/
-    background-color: lightblue;
-}
 
 .coral {
     /*debug*/
@@ -188,3 +199,5 @@
 #button-footer {
     margin-right: 10px;
 }
+
+
